@@ -1,19 +1,19 @@
 {% set name = "mycli" %}
-{% set version = "1.20.1" %}
+{% set version = "1.21.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4414ef8573a957b2cbb91db87bc48d48bfc3714ef23cf41cd4a5ad227561c6e
+  sha256: a3cf7940384941eb59267a58e6e346ef4e3d131b10535d4f104850417cd3b964
 
 build:
   number: 0
   entry_points:
     - mycli = mycli.main:cli
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
 requirements:
