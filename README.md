@@ -5,7 +5,7 @@ Home: https://mycli.net
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: CLI for MySQL Database. With auto-completion and syntax highlighting.
 
