@@ -1,5 +1,5 @@
 {% set name = "mycli" %}
-{% set version = "1.24.3" %}
+{% set version = "1.24.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 424daa3977c033bc49bf57c3b7f9a76f635915fe52fc4c689d0b4b1389b6d9ae
+  sha256: 4345b95c9fe944caaf833dc8e18b63eaf3413fbf7c474e04d8c0cd2b1d75c507
 
 build:
   number: 0
