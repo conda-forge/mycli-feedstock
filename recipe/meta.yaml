@@ -10,7 +10,7 @@ source:
   sha256: fef12ed8125fd13edf4a04977e5ab9e8895a8a1ed10218629595206cdcd96108
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - mycli = mycli.main:cli
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
