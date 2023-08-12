@@ -1,11 +1,11 @@
-About mycli
-===========
+About mycli-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mycli-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mycli.net
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mycli-feedstock/blob/main/LICENSE.txt)
 
 Summary: CLI for MySQL Database. With auto-completion and syntax highlighting.
 
