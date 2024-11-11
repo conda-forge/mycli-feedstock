@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 66bfac0be21df16e01ff6187cc9cece6676a4c5f1bd3435887e633b5e380e4c3
 
 build:
@@ -19,7 +19,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python 3.7
+    - setuptools
   run:
     - click >=7.0
     - cryptography >=1.0.0
