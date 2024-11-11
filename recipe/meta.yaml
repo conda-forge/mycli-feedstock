@@ -33,6 +33,7 @@ requirements:
     - cli_helpers >=2.2.1
     - pyaes >=1.6.1
     - pyperclip >=1.8.1
+    - pyfzf >=0.3.1
     - python >=3.7
     - importlib-resources >=5.0.0
 
