@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: d11da4e614640096ea8066443d75946f8f281714ca30a89065c91fdc5f950b72
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - mycli = mycli.main:cli
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
@@ -19,7 +19,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
+    - setuptools
   run:
     - click >=7.0
     - cryptography >=1.0.0
@@ -32,10 +33,12 @@ requirements:
     - cli_helpers >=2.2.1
     - pyaes >=1.6.1
     - pyperclip >=1.8.1
-    - python >=3.7
+    - python >={{ python_min }}
     - importlib-resources >=5.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mycli
     - mycli.packages
