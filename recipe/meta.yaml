@@ -1,5 +1,5 @@
 {% set name = "mycli" %}
-{% set version = "1.27.2" %}
+{% set version = "1.31.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d11da4e614640096ea8066443d75946f8f281714ca30a89065c91fdc5f950b72
+  sha256: 598dfe7764fa6965304c3983e0d4c8e811338a03138f542ddceb75a600c1350d
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - mycli = mycli.main:cli
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
